@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather++</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxIcons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="container" class="wrapper">
+        <!-- getting location from user -->
+        <header><i class='bx bx-left-arrow-alt'></i>Weather+</header>
+        <hr>
+        <section class="input-part">
+            <p id="message" class="info-txt"></p>
+            <input type="text" placeholder="enter city name">
+            <div class="separator"></div>
+            <button>get device location</button>
+        </section>
+        <!-- showing weather info from user -->
+        <section class="weather-part">
+            <img src="images/cloud.png" alt="weather icon">
+            <div class="temp">
+                <div class="numb" id="numb">_</div>
+                <span class="deg">&#8451;</span>
+            </div>
+            <div class="weather" id="weather">_ _</div>
+            <div class="location">
+                <!-- <i class='bx bxs-location-plus' ></i> -->
+                <span id="locate">_ , _</span>
+            </div>
+            <div class="bottom-details">
+                <div class="column feels">
+                    <i class='bx bxs-thermometer' ></i>
+                    <div class="details">
+                        <div class="temp">
+                            <span class="numb-2" id="numb-2">_</span>
+                            <span class="deg">&#8451;</span>
+                        </div> 
+                        <p>feels like</p>
+                    </div>
+                </div>
+                <div class="column humidity">
+                    <i class='bx bxs-droplet-half' ></i>
+                    <div class="details">
+                            <span id='humid'>_</span>
+                        <p>humidity</p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </div>
+    <footer>
+        made with <i class='bx bxs-heart'></i> <b>Mohak ahuja</b> 
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
