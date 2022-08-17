@@ -72,7 +72,7 @@ if (id==800) {
 else if(id==200 && id<=232){
     weatherIcon.src="images/thunderstorm.png";
 }
-else if(id==500 && id<=500){
+else if(id==500 && id<=531){
     weatherIcon.src="images/rain.png";
 }
 else if(id==801 && id<=804){
